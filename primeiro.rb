@@ -19,6 +19,11 @@ class Modo
     def nome=(nome)
         @nome = nome
     end
+
+    # create hash
+    # return hash by key
+    #def valor(p1)
+
 end
 
 #puts 'Mister ' + Modo.new('felicão').p1
