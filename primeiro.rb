@@ -12,13 +12,16 @@ class Modo
         "ação"
     end
 
-    def Nome
+    def nome
         @nome
     end
     
-    def Nome=(nome)
+    def nome=(nome)
         @nome = nome
     end
 end
 
-puts 'Mister ' + Modo.new('felicão').p1
+#puts 'Mister ' + Modo.new('felicão').p1
+a = Modo.new 'teste'
+a.nome = 'Rafael'
+puts "olá #{a.nome}"
