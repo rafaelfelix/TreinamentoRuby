@@ -1,5 +1,7 @@
 require './carro.rb'
 
+require 'debugger'
+
 class Fiat < Carro
     attr_accessor :modelo
 
@@ -28,7 +30,7 @@ class VW < Carro
     end
 
     def vendedor
-        "Comeri"
+        "Comeri - #{self.calcula_marca3}"
     end
 
     def set_marca(valor)
@@ -39,6 +41,8 @@ class VW < Carro
         @set_marca
     end
 end
+
+debugger
 
 puts Carro.inspect
 puts Fiat.inspect
@@ -66,6 +70,7 @@ puts "FIAT MARCA: #{a.get_marca}"
 puts a.inspect
 
 a = VW.new
+puts a.vendedor
 a.nome = "Gol"
 a.ano = "2013"
 a.quantidade_de_portas = "5"

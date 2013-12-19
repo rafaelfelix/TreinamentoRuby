@@ -7,4 +7,9 @@ class Carro
         @volante = "xyz"
         @volante
     end
+
+    protected
+    def calcula_marca3
+        "sss"
+    end
 end
