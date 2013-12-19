@@ -4,7 +4,7 @@ class Fiat < Carro
     attr_accessor :modelo
 
     def marca
-        "FIAT"
+        "FIAT - #{super}"
     end
 
     def vendedor
@@ -24,7 +24,7 @@ class VW < Carro
     attr_accessor :modelo
 
     def marca
-        "volks"
+        "volks - #{super}"
     end
 
     def vendedor

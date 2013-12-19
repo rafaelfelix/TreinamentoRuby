@@ -1,7 +1,10 @@
 class Carro
     attr_accessor :nome, :ano, :quantidade_de_portas, :cor
 
+    @volante = "de couro"
+
     def marca
-        raise "nao implementado"
+        @volante = "xyz"
+        @volante
     end
 end
