@@ -2,6 +2,46 @@ require './carro.rb'
 
 require 'debugger'
 
+class Klass
+
+    CONSTANTE = "abril"
+
+    def metodo_instancia
+        "criar nova instancia #{CONSTANTE}"
+    end
+
+    def self.metodo_de_classe_ou_statico
+        "criar nova instancia #{CONSTANTE}"
+    end
+
+    class << self
+        def test
+            "teste"
+        end
+
+        def test2
+            "teste2"
+        end
+
+        def test3
+            "teste3"
+        end
+    end
+
+end
+
+debugger
+
+class Singleton
+    private_class_method :new
+
+    def self.statico(param = nil)
+        "criar nova instancia #{param}"
+    end
+end
+
+=begin
+
 class Fiat < Carro
     attr_accessor :modelo
 
@@ -79,3 +119,5 @@ a.modelo = "Bolinha"
 a.set_marca('bla')
 puts "VW MARCA: #{a.get_marca}"
 puts a.inspect
+
+=end
