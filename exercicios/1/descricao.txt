@@ -1,0 +1,22 @@
+criar um modulo AcoesAutomoveis
+neste modulo ter as funcoes
+andar()
+parar()
+
+criar classe carro com os atributos
+nome, marca
+
+incluir o modulo na classe carro
+
+criar uma instancia da clarre carro e injetar o metodo virar
+
+retorno
+
+virar retorna uma string "virando carro"
+andar retorna uma string "carro andando"
+parar retorna uma string "carro parado"
+
+
+depois criar um metodo adicionar pessoas que irá adicionar em um array
+
+e criar um method_missing onde eu posso acessar as pessoas pelo nome e responder "presente!!!"
