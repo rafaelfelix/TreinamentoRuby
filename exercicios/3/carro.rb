@@ -1,7 +1,7 @@
 class Carro
     attr_accessor :nome, :modelo
-    
+
     def marca
-        "Fiat"
+        "Fiatr"
     end
 end
